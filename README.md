@@ -36,6 +36,7 @@ Run them directly:
 python3 b_series_ver.py
 
 # Validate ESRK-15 on the 2D Bruss
+python3 convergence_studie.py
 
 ```
 
@@ -53,5 +54,4 @@ python3 train.py --solver esrk --steps 1 --h 30  --epochs 200
 
 
 
-elator PDE
-python3 convergence_studie.py
+
