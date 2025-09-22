@@ -50,6 +50,16 @@ python3 convergence_studie.py
 # Run for  ESRK-15 cifar-10
 python3 train.py --solver esrk --steps 1 --h 30  --epochs 200
 
+
+#Run for RK4 for cifar100
+python3 train2.py --solver rk4 --steps 4 --h 7.5  --epochs 200
+
+
+
+#Run for RK4 for cifar100
+python3 train2.py --solver esrk --steps 1 --h 30  --epochs 200
+
+
 ```
 
 
