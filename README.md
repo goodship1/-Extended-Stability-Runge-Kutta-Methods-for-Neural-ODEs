@@ -66,16 +66,6 @@ python3 train2.py --solver esrk --steps 1 --h 30  --epochs 200
 
 
 ```bash
-# Run for RK4 comparsion cifar-10
-for s in 1 2 3; do
-  python3 tiny_esrk_cifar.py \
-    --solver rk4 --steps 4 --h 7.5 --epochs 40 --batch 128 \
-    --groupnorm --label_smoothing 0.05 \
-    --enable_val_perturb --val_seed 1234 \
-    --val_noise_std 0.12 --val_brightness 0.10 --val_contrast 0.10 --val_translate_px 3
-
-
-# Run for esrk-15 comparsion cifar 10
 python3 tiny_esrk_cifar.py \
   --solver esrk \
   --steps 1 \
@@ -89,6 +79,22 @@ python3 tiny_esrk_cifar.py \
   --val_brightness 0.10 \
   --val_contrast 0.10 \
   --val_translate_px 3
+
+
 ```
+
+
+## 🔬 Natural robustness training ESRK.
+  ```bash
+python3 tiny_esrk_cifar.py --solver esrk --steps 1 --h 30 --epochs 40 --batch 128   --groupnorm --label_smoothing 0.05 --train_perturb --train_perturb_p 0.5   --enable_val_perturb --val_seed 1234   --val_noise_std 0.12 --val_brightness 0.15 --val_contrast 0.15 --val_translate_px 3   --clip_grad 1.5
+
+
+```
+
+
+
+
+
+
 
 
