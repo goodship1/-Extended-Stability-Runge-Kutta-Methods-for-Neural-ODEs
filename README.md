@@ -42,6 +42,7 @@ python3 convergence_studie.py
 
 
 ## 🔬 CIFAR-10 and CIFAR-100
+Run directly with with your CIFAR-10 and CIFAR-100 
 
 ```bash
 # Run for RK4 comparsion cifar-10
