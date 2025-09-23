@@ -85,9 +85,11 @@ python3 tiny_esrk_cifar.py \
 ```
 
 
-## 🔬 Natural robustness training ESRK.
+## 🔬 Natural robustness training ESRK and RK4.
   ```bash
 python3 tiny_esrk_cifar.py --solver esrk --steps 1 --h 30 --epochs 40 --batch 128   --groupnorm --label_smoothing 0.05 --train_perturb --train_perturb_p 0.5   --enable_val_perturb --val_seed 1234   --val_noise_std 0.12 --val_brightness 0.15 --val_contrast 0.15 --val_translate_px 3   --clip_grad 1.5
+
+python3 tiny_esrk_cifar.py --solver rk4 --steps 4 --h 7.5 --epochs 40 --batch 128   --groupnorm --label_smoothing 0.05 --train_perturb --train_perturb_p 0.5   --enable_val_perturb --val_seed 1234   --val_noise_std 0.12 --val_brightness 0.15 --val_contrast 0.15 --val_translate_px 3   --clip_grad 1.5
 
 
 ```
