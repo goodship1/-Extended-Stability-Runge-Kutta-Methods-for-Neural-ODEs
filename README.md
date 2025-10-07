@@ -1,5 +1,5 @@
 # Extended-Stability Runge–Kutta Methods for Neural ODEs  
-*SATML Position Paper — “Position: Extended-Stability Runge–Kutta Methods for Neural ODEs: Predictable Cost, Robustness, and Stability”*  
+"Extended-Stability Runge–Kutta Methods for Neural ODEs: Predictable Cost, Robustness, and Stability”*  
 
  
 
